@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+*/
+/*
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+/* ----------------------------------------------------------------------------------- */
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  min-width: 1440px;
+  min-height: 720px;
+  max-width: 1600px;
+  max-height: 1080px;
+  font-family: "Poppins", sans-serif;
+  color: #403c39;
+}
+
+/* -------------------------------------------- */
+
+nav {
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > img {
+  align-self: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 56px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+ul a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+ul li:hover {
+  color: #f38160;
+}
+li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+li img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+li:hover img {
+  opacity: 1;
+}
+
+.login {
+  display: flex;
+  gap: 56px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.login > :first-child a {
+  display: flex;
+  height: 34px;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.login > :nth-child(2) {
+  display: flex;
+  gap: 40px;
+}
+.login a:first-child {
+  text-decoration: underline;
+  color: #f38160;
+}
+.login a:nth-child(2) {
+  text-decoration: none;
+  color: #fafafa;
+}
+.signup {
+  padding: 16px 40px 16px 40px;
+  border-radius: 16px;
+  background-color: #f38160;
+}
+
+.login > div {
+  display: flex;
+  align-items: center;
+}
+
+/* -------------------------------------------- */
+
+main {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  color: #403c39;
+}
+h1 span {
+  color: #f38160;
+}
+
+.left > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: #949494;
+  width: 80%;
+}
+
+.search {
+  display: flex;
+  width: 452px;
+  height: 60px;
+  margin: 40px 0 40px 0;
+}
+.search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: linear-gradient(to right, #d0d0d240 25%);
+  padding: 0 32px;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 5px 0 0 5px;
+}
+.search button {
+  width: 60px;
+  border: none;
+  cursor: pointer;
+  background: #f38160;
+  border-radius: 0 5px 5px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check > div {
+  display: flex;
+  gap: 32px;
+  margin: 8px 0 8px 0;
+}
+.check > div > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right {
+  display: flex;
+  position: relative;
+}
+.right img {
+  position: absolute;
+}
+.right > :nth-child(1) {
+  z-index: 1;
+}
+.right > :nth-child(2) {
+  z-index: 2;
+}
+.right > :nth-child(3) {
+  z-index: 3;
+}
+
+/* -------------------------------------------- */
+
+footer {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+  margin-top: 50px;
+}
+footer p {
+  color: #909090;
+}
